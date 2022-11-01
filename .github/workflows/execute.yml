@@ -5,6 +5,10 @@ on:
 
 permissions:
   contents: read
+  
+env:
+  NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+
 
 jobs:
   build:
