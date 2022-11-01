@@ -9,7 +9,7 @@ async function main() {
   });
 
   const response = await notion.databases.query({
-    database_id: process.env.TEST_DATABASE,
+    database_id: process.env.TEST_DATABASE as string,
   });
 
   console.log("Got response:", response);
